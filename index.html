@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice_Cream</title>
+    <link rel="icon" href="logo1.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="assets/logo1.jpg" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">What's new</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>It's not just Ice Cream<br>It's an <span>Emotion</span></h2>
+                <p>My advice to you is not to inquire why or why not, but to enjoy the ice cream<br>
+                    on your plate while you can, Ice cream is cheaper than therapy<br>
+                    If you want to make everyone happy, don’t be a leader. Go hand out ice<br>
+                     cream</p> 
+                <a href="#">Read More</a>
+            </div>
+            <div class="imgBox">
+            <img src="assets/img1.png" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="assets/thumb1.png" onclick="imgSlider('assets/img1.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="assets/thumb2.png" onclick="imgSlider('assets/img2.png');changeCircleColor('#98FF98')"></li>
+            <li><img src="assets/thumb3.png" onclick="imgSlider('assets/img3.png');changeCircleColor('#FFFDD0')"></li>
+            <li><img src="assets/thumb4.png" onclick="imgSlider('assets/img4.png');changeCircleColor('#c83f49')"></li>
+            <li><img src="assets/thumb5.png" onclick="imgSlider('assets/img5.png');changeCircleColor('#d2b48c')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="facebook.png"></a></li>
+            <li><a href="#"><img src="twitter.png"></a></li>
+            <li><a href="#"><img src="instagram.png"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
